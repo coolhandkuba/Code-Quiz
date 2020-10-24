@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <!-- Link to CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <!-- Style for the li list that we create in main.js -->
+    <style>
+    li {
+        background-color: purple;
+        margin-top: 10px;
+        padding: 5px 15px;
+        width: 100%;
+        font-size: 15px;
+        font-weight: normal;
+        color: white;}
+    </style>
+</head>
+<body>
+    <!-- Body with link to highscors in top left corner -->
+    <a href='./highscores.html'>View High Scores</a>
+    <!-- Container div to make it responsive across mobile devices -->
+    <div class='container' style='max-width: 50%;'>
+        <div class='card text-center'>
+            <div class='card-body'>
+            <!-- Timer -->
+            <div id='timer' style='float: right;'></div>
+            <br>
+            <!-- div for questions  -->
+            <div id='questions' style='font-weight: bold;'>
+                <br>
+                <!-- introduction page to the quiz -->
+                <h1>Coding Quiz Challenge</h1>
+                <p style='font-weight: normal;'>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            </div>
+            <!-- Button to start quiz -->
+            <button id='start' type='button' class='btn btn-primary btn-sm'>Start Quiz</button>
+            </div>
+        </div>  
+    </div>
+    <!-- Links to both javascripts -->
+    <script src='questions.js'></script>
+    <script src='main.js'></script>
+    
+</body>
+</html>
